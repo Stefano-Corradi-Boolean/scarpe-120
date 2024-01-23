@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+p{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+}
+
+header nav{
+    padding: 40px 20px;
+}
+
+header ul{
+    justify-content: end;
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    padding: 0 20px;
+}
+
+header ul a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 1px rgba(0,0,0,.2);
+}
+
+header ul a:hover{
+    box-shadow: 0 10px 10px rgba(0,0,0,.4);
+
+}
+
+main section{
+    height: 100vh;
+    position: relative;
+}
+
+section#uno{
+    background-color: red;
+}
+
+section#due{
+    background-color: green;
+}
+
+section#tre{
+    background-color: yellow;
+}
+
+section .card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .card p{
+    text-align: center;
+    font-size: 3vw;
+    color: yellow;
+}
+
+section#tre p{
+    color: green;
+}
